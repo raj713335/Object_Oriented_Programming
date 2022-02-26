@@ -25,7 +25,7 @@ class Item:
 
     @classmethod
     def instantiate_from_csv(cls):
-        with open('items.csv', 'r') as f:
+        with open('../items.csv', 'r') as f:
             reader = csv.DictReader(f)
             items = list(reader)
 
