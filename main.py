@@ -1,16 +1,16 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+class Item:
+    def calculate_total_price(self, x, y):
+        return x*y
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+item1 = Item()
+item1.name = "Phone"
+item1.price = 100
+item1.quantity = 5
+print(item1.calculate_total_price(item1.price, item1.quantity))
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+item2 = Item()
+item2.name = "Laptop"
+item2.price = 1000
+item2.quantity = 3
+print(item1.calculate_total_price(item2.price, item2.quantity))
