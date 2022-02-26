@@ -67,3 +67,18 @@ class Item:
     @property
     def read_only_name(self):
         return "AAA"
+
+
+    def __connect(self):
+        pass
+
+    def __prepare_body(self):
+        pass
+
+    def __send(self):
+        pass
+
+    def send_email(self):
+        self.__connect()
+        self.__prepare_body()
+        self.__send()

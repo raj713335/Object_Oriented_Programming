@@ -13,3 +13,5 @@ item2 = Item("MyItem2", 750)
 item1.name = "OtherItem"
 
 print(item1.name)
+
+item1.send_email()
